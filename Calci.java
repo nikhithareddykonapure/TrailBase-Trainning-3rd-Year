@@ -1,8 +1,13 @@
-package com.example1;
+package fourth.text;
 
 public class Calci {
-	public int add(int a,int b) {
-		return a+b;
-	}
+    Calculator cal;
 
+    Calci(Calculator cal1) {
+        this.cal = cal1;   // ✅ correct assignment
+    }
+
+    public int sum(int x, int y) {
+        return cal.add(x, y);
+    }
 }
